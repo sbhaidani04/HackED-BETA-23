@@ -6,7 +6,7 @@
 # split input into a list of individual letters
 
 
-# opening/reading from file, splitting 
+# opening/reading from file, splitting
 def read_file(filename):
     with open(filename, 'r') as file:
         words = file.read().split("\n")
@@ -20,11 +20,16 @@ def find_valid_words(words, letters):
         print("at:",word)
         for letter in letters:
             if letter in word:
+<<<<<<< HEAD
                 #canMake=False
                 print("Word:",word," letter:",letter)
         #if canMake==False:
         updated_words.remove(word)
          
+=======
+                updated_words.remove(word)
+                break
+>>>>>>> 82cb74889cabdb4f0f3cec85bf4e6b381302c062
     return updated_words 
 
 def get_input():
