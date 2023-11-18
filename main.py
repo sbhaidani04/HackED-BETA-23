@@ -5,14 +5,17 @@
 
 def choose_theme():
     print("Which theme would you like words for? Enter the number associated with the theme you would like:")
-    print("1. taylor_swift.txt")
-    print("2. harry_styles.txt")
+    print("1. Taylor Swift")
+    print("2. Harry Styles")
+    print("3. Coldplay")
     name = ''
     chosen = int(input())
     if chosen == 1:
         name = 'taylor_swift'
     elif chosen == 2:
         name = 'harry_styles'
+    elif chosen == 3:
+        name = 'coldplay'
     return name
 
 # split input into a list of individual letters
@@ -50,6 +53,7 @@ def get_input():
 if __name__ == "__main__":
     name = choose_theme()
     filename = name+".txt"
+    print(filename)
     letters = get_input()
     words = read_file(filename)
     updated_words = find_valid_words(words, letters)
