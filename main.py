@@ -8,8 +8,8 @@
 
 # opening/reading from file, splitting 
 def read_file(filename):
-    with open(filename, 'r') as file;
-    lines = file.read().split()
+    with open(filename, 'r') as file:
+        lines = file.read().split()
     return (lines)
 
 def find_letter(lines):
