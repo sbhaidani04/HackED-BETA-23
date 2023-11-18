@@ -13,13 +13,13 @@ def read_file(filename):
     return (words)
 
 def find_valid_words(words, letters):
-    #valid = []
+
     updated_words=words
     for word in updated_words:
         for letter in letters:
             if letter in word:
                 updated_words.remove(word)
-    return 0
+    return (updated_words)
 
 def get_input():
     # returns a list of letters the user does NOT have
