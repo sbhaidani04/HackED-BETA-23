@@ -6,7 +6,7 @@
 # split input into a list of individual letters
 
 
-# opening/reading from file, splitting 
+# opening/reading from file, splitting
 def read_file(filename):
     with open(filename, 'r') as file:
         words = file.read().split()
@@ -18,6 +18,7 @@ def find_valid_words(words, letters):
         for letter in letters:
             if letter in word:
                 updated_words.remove(word)
+                break
     return updated_words 
 
 def get_input():
@@ -31,10 +32,11 @@ def get_input():
 
 
 if __name__ == "__main__":
-    get_input()
-    read_file(filename)
-    find_valid_words(words, letters)
-    print("Possible words include:"+
+    filename = input("Filename:")
+    letters = get_input()
+    words = read_file(filename)
+    updated_words = find_valid_words(words, letters)
+    print("Possible words include:", updated_words)
 
 
     
