@@ -31,13 +31,11 @@ def get_input():
 
 
 if __name__ == "__main__":
-    get_input()
-    read_file(filename)
-    find_valid_words(words, letters)
+    filename = input("Filename:")
+    letters = get_input()
+    words = read_file(filename)
+    updated_words = find_valid_words(words, letters)
     print("Possible words include:", updated_words)
-
-
-    
 
 
 # go through each letter of each word to see if missing letter is in it
