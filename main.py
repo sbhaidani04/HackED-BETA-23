@@ -9,15 +9,22 @@
 # opening/reading from file, splitting 
 def read_file(filename):
     with open(filename, 'r') as file:
-        words = file.read().split()
+        words = file.read().split("\n")
     return (words)
 
 def find_valid_words(words, letters):
     updated_words=words
+    print(updated_words)
     for word in updated_words:
+        #canMake=True
+        print("at:",word)
         for letter in letters:
             if letter in word:
-                updated_words.remove(word)
+                #canMake=False
+                print("Word:",word," letter:",letter)
+        #if canMake==False:
+        updated_words.remove(word)
+         
     return updated_words 
 
 def get_input():
