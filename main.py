@@ -13,9 +13,12 @@ def read_file(filename):
     return (words)
 
 def find_valid_words(words, letters):
-    valid = []
-    
-
+    #valid = []
+    updated_words=words
+    for word in updated_words:
+        for letter in letters:
+            if letter in word:
+                updated_words.remove(word)
     return 0
 
 def get_input():
