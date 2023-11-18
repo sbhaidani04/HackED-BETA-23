@@ -8,7 +8,7 @@
 
 # opening/reading from file, splitting 
 def read_file(filename):
-    file = open(filename, 'r')
+    with open(filename, 'r') as file;
     lines = file.read().split()
     return (lines)
 
