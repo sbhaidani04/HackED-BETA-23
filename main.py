@@ -13,7 +13,6 @@ def read_file(filename):
     return (words)
 
 def find_valid_words(words, letters):
-    #valid = []
     updated_words=words
     for word in updated_words:
         for letter in letters:
