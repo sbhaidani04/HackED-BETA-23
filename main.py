@@ -13,12 +13,12 @@ def read_file(filename):
     return (words)
 
 def find_valid_words(words, letters):
-    #valid = []
     updated_words=words
     for word in updated_words:
         for letter in letters:
             if letter in word:
                 updated_words.remove(word)
+    return updated_words 
 
 def get_input():
     # returns a list of letters the user does NOT have
@@ -28,6 +28,12 @@ def get_input():
     #splits at spaces and turns into a list of letters
     letters = letters.split()
     return letters
+
+
+if __name__ == "__main__":
+    get_input()
+    read_file(filename)
+    find_valid_words(words, letters)
 
 
     
