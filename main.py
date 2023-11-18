@@ -9,10 +9,11 @@
 # opening/reading from file, splitting 
 def read_file(filename):
     with open(filename, 'r') as file:
-        lines = file.read().split()
-    return (lines)
+        words = file.read().split()
+    return (words)
 
-def find_letter(lines):
+def find_valid_words(words, letters):
+
     return 0
 
 def get_input():
