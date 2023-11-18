@@ -20,7 +20,6 @@ def choose_theme():
 
 # split input into a list of individual letters
 
-
 # opening/reading from file, splitting 
 def read_file(filename):
     with open(filename, 'r') as file:
@@ -61,9 +60,6 @@ if __name__ == "__main__":
     print("Possible words include:")
     for i in updated_words:
         print(i)
-
-
-    
 
 
 # go through each letter of each word to see if missing letter is in it
