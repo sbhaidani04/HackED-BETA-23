@@ -3,22 +3,41 @@
     letters = inputs['letter_input']
     return {"sum": letters}"""
 
+def choose_theme():
+    print("Which theme would you like words for? Enter the number associated with the theme you would like:")
+    print("1. Taylor Swift")
+    print("2. Harry Styles")
+    print("3. Coldplay")
+    name = ''
+    chosen = int(input())
+    if chosen == 1:
+        name = 'taylor_swift'
+    elif chosen == 2:
+        name = 'harry_styles'
+    elif chosen == 3:
+        name = 'coldplay'
+    return name
+
 # split input into a list of individual letters
 
 
-# opening/reading from file, splitting
+# opening/reading from file, splitting 
 def read_file(filename):
     with open(filename, 'r') as file:
-        words = file.read().split()
+        words = file.read().splitlines()
     return (words)
 
 def find_valid_words(words, letters):
-    updated_words=words
-    for word in updated_words:
+    updated_words=[]
+    for word in words:
+        add = True
         for letter in letters:
             if letter in word:
-                updated_words.remove(word)
-                break
+                add = False
+            if letter not in word and add == False:
+                add = False
+        if add == True:
+            updated_words.append(word)
     return updated_words 
 
 def get_input():
@@ -32,11 +51,16 @@ def get_input():
 
 
 if __name__ == "__main__":
-    filename = input("Filename:")
+    name = choose_theme()
+    filename = name+".txt"
+    print(filename)
     letters = get_input()
     words = read_file(filename)
     updated_words = find_valid_words(words, letters)
-    print("Possible words include:", updated_words)
+    print()
+    print("Possible words include:")
+    for i in updated_words:
+        print(i)
 
 
     
