@@ -19,7 +19,6 @@ def find_valid_words(words, letters):
         for letter in letters:
             if letter in word:
                 updated_words.remove(word)
-    return 0
 
 def get_input():
     # returns a list of letters the user does NOT have
