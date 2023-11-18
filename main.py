@@ -34,7 +34,7 @@ if __name__ == "__main__":
     get_input()
     read_file(filename)
     find_valid_words(words, letters)
-    print("Possible words include:"+
+    print("Possible words include:", updated_words)
 
 
     
