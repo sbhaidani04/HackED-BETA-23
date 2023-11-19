@@ -128,6 +128,7 @@ setWordList(valid_phrases.map(word => word.toLowerCase()));
             fontWeight: 'bold',
             color: 'white'
         }}>Select the letters you have:</h1>
+<r1>
 <input type="checkbox" id="A" name="letter" value="A"/>
 <label htmlFor="A"> A</label><br/>
 <input type="checkbox" id="B" name="letter" value="B"/>
@@ -154,7 +155,8 @@ setWordList(valid_phrases.map(word => word.toLowerCase()));
 <label htmlFor="L"> L</label><br/>
 <input type="checkbox" id="M" name="letter" value="M"/>
 <label htmlFor="M"> M</label><br/>
-<br></br>
+</r1>
+<r2>
 <input type="checkbox" id="N" name="letter" value="N"/>
 <label htmlFor="N"> N</label><br/>
 <input type="checkbox" id="O" name="letter" value="O"/>
@@ -181,6 +183,7 @@ setWordList(valid_phrases.map(word => word.toLowerCase()));
 <label htmlFor="Y"> Y</label><br/>
 <input type="checkbox" id="Z" name="letter" value="Z"/>
 <label htmlFor="Z"> Z</label><br/>
+</r2>
 
          
         <br/>
