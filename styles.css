@@ -4,7 +4,7 @@ body{
 
 fieldset{
   color: white; /*font color*/
-  border: white 3px solid; 
+  border: white 3px dashed; 
 }
 
 fileInput{
@@ -32,10 +32,11 @@ button:hover{
   text-align: center;
 }
 
-/* next-page button styles */
+/* next-page  styles */
 .next-page button:hover{
 background-color: rgb(72, 165, 184);
 text-align: center;
+color: white
 }
 .next-page{
 position: absolute; 
@@ -53,6 +54,7 @@ border-radius: 90px;
 border-color: black;
 font-size: 20px;
 padding: 1rem;
+color: rgb(72, 165, 184);
 }
 
 .next-page h1{
@@ -65,3 +67,47 @@ font-size: xx-large;
   font: 20px Courier, sans-serif;
   color: white;
 }
+
+/* header styles */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1{
+  color: rgb(72, 165, 184);
+  font-size: 30px;
+  line-height: 0em
+}
+
+.header h2{
+  color: rgb(72, 165, 184);
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* footer styles */
+footer { 
+  position: absolute; 
+  text-align: center;
+  bottom: 0; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  padding: 2px;
+  color: white;
+}
+
+.footer box{
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+.footer h1{
+  color: rgb(72, 165, 184);
+  background: white;
+}
+
+
+
