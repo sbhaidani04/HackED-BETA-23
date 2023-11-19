@@ -2,39 +2,38 @@
 import taylorSwift from './data/taylor_swift.json';
 //import './App.css';
 
-function App() {
-
-  
-//const form = document.querySelector('form');
-
 function readFile() {
-    let taylor_swift = taylorSwift.taylor
-    let words = taylor_swift
-    return words;
-  }
+  let taylor_swift = taylorSwift.taylor
+  let words = taylor_swift
+  return words;
+}
 
 function findValidWords(words, letters) {
   let updated_words = [];
-  let word;
-  let letter;
-  for (word of words) {
+    
+  for (let word of words) {
     let add = true;
-    for (letter of letters) {
+
+    for (let letter of letters) {
       if (word.includes(letter)) {
-        console.log('invalid', word);
-      } else {
-        updated_words.push(word);
-        break;
+        add = false;
+      }
+
+      if (!word.includes(letter) && add === false) {
+        add = false;
       }
     }
 
-    //if (add === true) {
-    //  updated_words.push(word);
-    //}
+    if (add === true) {
+      updated_words.push(word);
+    }
   }
-  console.log('updated',updated_words)
+
   return updated_words;
-  }
+}
+
+function App() {
+
 
 const handleSubmit = (e) => {
 
@@ -51,11 +50,11 @@ let unavailable_letters = [];
 document.querySelectorAll('[type="checkbox"]').forEach(item => {
 // Iterates through all checkbox elements
 if (item.checked === true) {
-  letters.push(item.value);
+  letters.push(item.value.toLowerCase());
   // Pushes checkbox value into letters array if checked
 } 
 else if (item.checked === false) {
-    unavailable_letters.push(item.value)
+    unavailable_letters.push(item.value.toLowerCase())
 }
 })
 
@@ -67,7 +66,7 @@ fd.append('letters', JSON.stringify(letters));
 //console.log(Array.from(fd)); 
 // Prints result as array
 
-console.log(unavailable_letters)
+console.log(letters)
 //let filename = 'database/taylor_swift.txt'
 let words = readFile()
 let valid_phrases = findValidWords(words, unavailable_letters)
