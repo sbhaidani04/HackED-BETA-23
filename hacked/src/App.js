@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import taylorSwift from './data/taylor_swift.json';
-//import './App.css';
+import './App.css';
 
 function readFile() {
   let taylor_swift = taylorSwift.taylor
@@ -74,9 +74,22 @@ console.log(valid_phrases)
 };
 
   return (
-    <form id = "LetterChecklistForm" onSubmit={handleSubmit}>
+    <div className="body">
+    <div className="center">
+      <label htmlFor="theme">Select a Theme: </label>
+        <select name="theme" id="theme">
+          <option value="taylor_swift">Taylor Swift</option>
+          <option value="harry_styles">Harry Styles</option>
+          <option value="coldplay">Coldplay</option>
+          <option value="one_direction">One Direction</option>
+        </select>
+      <label htmlFor="myfile">Input your own text file:</label>
+      </div>
+    
+    <form id="LetterChecklistForm" onSubmit={handleSubmit}>
     <fieldset>
         <legend>Select the letters you have:</legend>
+<h3>
 <input type="checkbox" id="A" name="letter" value="A"/>
 <label htmlFor="A"> A</label><br/>
 <input type="checkbox" id="B" name="letter" value="B"/>
@@ -103,7 +116,8 @@ console.log(valid_phrases)
 <label htmlFor="L"> L</label><br/>
 <input type="checkbox" id="M" name="letter" value="M"/>
 <label htmlFor="M"> M</label><br/>
-<br></br>
+</h3>
+<h4>
 <input type="checkbox" id="N" name="letter" value="N"/>
 <label htmlFor="N"> N</label><br/>
 <input type="checkbox" id="O" name="letter" value="O"/>
@@ -130,12 +144,16 @@ console.log(valid_phrases)
 <label htmlFor="Y"> Y</label><br/>
 <input type="checkbox" id="Z" name="letter" value="Z"/>
 <label htmlFor="Z"> Z</label><br/>
+</h4>
 
          
         <br/>
+<submitButton>
         <input type="submit" value="Submit"/>
+</submitButton>
     </fieldset>
 </form>
+</div>
   );
 }
 

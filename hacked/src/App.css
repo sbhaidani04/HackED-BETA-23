@@ -6,29 +6,46 @@ fieldset{
   color: white; /*font color*/
   border: white 3px solid; 
 }
+
 fileInput{
-  font: 15px Courier, sans-serif;
+  font: 15px Courier sans-serif;
   color: white;
 }
 
 h1{  
-  font: 25px Courier, sans-serif;
+  font: 25px Courier sans-serif;
+  font-family: Courier;
   font-weight: bold;
   color: white;
 }
 h2{
-  font: 20px Courier, sans-serif;
+  font: 20px Courier sans-serif;
   color: white;
+
 }
 button:hover{ /* turning cursor to pointer when hovered over submit button*/
   cursor: pointer;
+}
+h3{
+  display:flex; 
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+}
+h4{
+  display:flex; 
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+}
+submitButton{
+  display:flex; 
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
 }
 
 .center {
   text-align: center;
 
-}
-
-.textbox{
-  width: 50px;
 }
