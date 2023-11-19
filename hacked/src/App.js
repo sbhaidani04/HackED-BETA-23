@@ -89,7 +89,6 @@ console.log(valid_phrases)
     <form id="LetterChecklistForm" onSubmit={handleSubmit}>
     <fieldset>
         <legend>Select the letters you have:</legend>
-<div style={{ float: 'left' }}>
 <input type="checkbox" id="A" name="letter" value="A"/>
 <label htmlFor="A"> A</label><br/>
 <input type="checkbox" id="B" name="letter" value="B"/>
@@ -102,8 +101,6 @@ console.log(valid_phrases)
 <label htmlFor="E"> E</label><br/>
 <input type="checkbox" id="F" name="letter" value="F"/>
 <label htmlFor="F"> F</label><br/>
-</div>
-<div style={{ float: 'left' }}>
 <input type="checkbox" id="G" name="letter" value="G"/>
 <label htmlFor="G"> G</label><br/>
 <input type="checkbox" id="H" name="letter" value="H"/>
@@ -116,10 +113,9 @@ console.log(valid_phrases)
 <label htmlFor="K"> K</label><br/>
 <input type="checkbox" id="L" name="letter" value="L"/>
 <label htmlFor="L"> L</label><br/>
-</div>
-<div style={{ float: 'left' }}>
 <input type="checkbox" id="M" name="letter" value="M"/>
 <label htmlFor="M"> M</label><br/>
+<br></br>
 <input type="checkbox" id="N" name="letter" value="N"/>
 <label htmlFor="N"> N</label><br/>
 <input type="checkbox" id="O" name="letter" value="O"/>
@@ -130,8 +126,6 @@ console.log(valid_phrases)
 <label htmlFor="Q"> Q</label><br/>
 <input type="checkbox" id="R" name="letter" value="R"/>
 <label htmlFor="R"> R</label><br/>
-</div>
-<div style={{ float: 'left' }}>
 <input type="checkbox" id="S" name="letter" value="S"/>
 <label htmlFor="S"> S</label><br/>
 <input type="checkbox" id="T" name="letter" value="T"/>
@@ -144,13 +138,10 @@ console.log(valid_phrases)
 <label htmlFor="W"> W</label><br/>
 <input type="checkbox" id="X" name="letter" value="X"/>
 <label htmlFor="X"> X</label><br/>
-</div>
-<div style={{ float: 'left' }}>
 <input type="checkbox" id="Y" name="letter" value="Y"/>
 <label htmlFor="Y"> Y</label><br/>
 <input type="checkbox" id="Z" name="letter" value="Z"/>
 <label htmlFor="Z"> Z</label><br/>
-</div>
 
          
         <br/>
