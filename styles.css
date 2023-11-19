@@ -4,11 +4,14 @@ body{
 
 fieldset{
     color: white; /*font color*/
-    border: white 3px solid;
-    
+    border: white 3px solid; 
 }
 
 h1{
-    font-style: oblique;
+    font-style:normal;
     color: white;
+}
+
+button:hover{ /* turning cursor to pointer when hovered over submit button*/
+    cursor: pointer;
 }
