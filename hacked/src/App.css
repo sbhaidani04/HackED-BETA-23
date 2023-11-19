@@ -6,19 +6,22 @@ fieldset{
   color: white; /*font color*/
   border: white 3px solid; 
 }
+
 fileInput{
-  font: 15px Courier, sans-serif;
+  font: 15px Courier sans-serif;
   color: white;
 }
 
 h1{  
-  font: 25px Courier, sans-serif;
+  font: 25px Courier sans-serif;
+  font-family: Courier;
   font-weight: bold;
   color: white;
 }
 h2{
-  font: 20px Courier, sans-serif;
+  font: 20px Courier sans-serif;
   color: white;
+
 }
 button:hover{ /* turning cursor to pointer when hovered over submit button*/
   cursor: pointer;
@@ -27,8 +30,4 @@ button:hover{ /* turning cursor to pointer when hovered over submit button*/
 .center {
   text-align: center;
 
-}
-
-.textbox{
-  width: 50px;
 }

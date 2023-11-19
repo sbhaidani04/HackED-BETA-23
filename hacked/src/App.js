@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import taylorSwift from './data/taylor_swift.json';
-//import './App.css';
+import './App.css';
 
 function readFile() {
   let taylor_swift = taylorSwift.taylor
@@ -74,7 +74,19 @@ console.log(valid_phrases)
 };
 
   return (
-    <form id = "LetterChecklistForm" onSubmit={handleSubmit}>
+    <div className="body">
+    <div className="center">
+      <label htmlFor="theme">Select a Theme: </label>
+        <select name="theme" id="theme">
+          <option value="taylor_swift">Taylor Swift</option>
+          <option value="harry_styles">Harry Styles</option>
+          <option value="coldplay">Coldplay</option>
+          <option value="one_direction">One Direction</option>
+        </select>
+      <label htmlFor="myfile">Input your own text file:</label>
+      </div>
+    
+    <form id="LetterChecklistForm" onSubmit={handleSubmit}>
     <fieldset>
         <legend>Select the letters you have:</legend>
 <div style={{ float: 'left' }}>
@@ -145,6 +157,7 @@ console.log(valid_phrases)
         <input type="submit" value="Submit"/>
     </fieldset>
 </form>
+</div>
   );
 }
 
