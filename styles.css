@@ -22,8 +22,8 @@ h2{
 
 }
 
-
-button:hover{ /* turning cursor to pointer when hovered over submit button*/
+/* turning cursor to pointer when hovered over submit button*/
+button:hover{ 
     cursor: pointer;
 
 }
