@@ -25,6 +25,7 @@ h2{
 }
 button:hover{ /* turning cursor to pointer when hovered over submit button*/
   cursor: pointer;
+  background-color: #CCFFFF; /* changing button color when hovered over submit button*/
 }
 h3{
   display:flex; 
