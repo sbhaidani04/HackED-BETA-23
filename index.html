@@ -68,37 +68,7 @@
 </form>
 
 
-<script>
-    const form = document.querySelector('form');
-
-    form.addEventListener('submit', (e) => {
-
-  e.preventDefault();
-  // Prevents HTML submission and page refresh
-
-  const fd = new FormData(form);
-  // Attaches all elements in form with name attribute to new FormData object
-
-  let letters = [];
-  // Creates array into which letters will be pushed if checked
-  document.querySelectorAll('[type="checkbox"]').forEach(item => {
-  // Iterates through all checkbox elements
-    if (item.checked === true) {
-      letters.push(item.value);
-      // Pushes checkbox value into letters array if checked
-    }
-  })
-
-  fd.append('letters', JSON.stringify(letters));
-  // Stringify array to JSON and append to FormData object
-
-
-
-  console.log(Array.from(fd)); 
-  // Prints result as array
-
-});
-</script>
+<script src="../script.js"></script>
     
 
 </body>
