@@ -1,3 +1,14 @@
 body{
-    background-color: #a62323;
+    background-color: rgb(72, 165, 184);
+}
+
+fieldset{
+    color: white; /*font color*/
+    border: white 3px solid;
+    
+}
+
+h1{
+    font-style: oblique;
+    color: white;
 }
