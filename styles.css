@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(72, 165, 184);
+    background-color: rgb(98, 172, 238);
 }
 
 fieldset{
@@ -21,8 +21,12 @@ h2{
     color: white;
 
 }
+
+button {
+    background-color: 
 button:hover{ /* turning cursor to pointer when hovered over submit button*/
     cursor: pointer;
+    background-color: #f0f8ff; /*changing background color of button when hovered*/
 }
 
 .center {
