@@ -19,6 +19,7 @@ h1{
 h2{
     font: 20px Courier, sans-serif;
     color: white;
+
 }
 button:hover{ /* turning cursor to pointer when hovered over submit button*/
     cursor: pointer;
@@ -29,6 +30,4 @@ button:hover{ /* turning cursor to pointer when hovered over submit button*/
 
   }
 
-.textbox{
-    width: 50px;
-}
+
