@@ -89,6 +89,7 @@ console.log(valid_phrases)
     <form id="LetterChecklistForm" onSubmit={handleSubmit}>
     <fieldset>
         <legend>Select the letters you have:</legend>
+<h3>
 <input type="checkbox" id="A" name="letter" value="A"/>
 <label htmlFor="A"> A</label><br/>
 <input type="checkbox" id="B" name="letter" value="B"/>
@@ -115,7 +116,8 @@ console.log(valid_phrases)
 <label htmlFor="L"> L</label><br/>
 <input type="checkbox" id="M" name="letter" value="M"/>
 <label htmlFor="M"> M</label><br/>
-<br></br>
+</h3>
+<h4>
 <input type="checkbox" id="N" name="letter" value="N"/>
 <label htmlFor="N"> N</label><br/>
 <input type="checkbox" id="O" name="letter" value="O"/>
@@ -142,10 +144,13 @@ console.log(valid_phrases)
 <label htmlFor="Y"> Y</label><br/>
 <input type="checkbox" id="Z" name="letter" value="Z"/>
 <label htmlFor="Z"> Z</label><br/>
+</h4>
 
          
         <br/>
+<submitButton>
         <input type="submit" value="Submit"/>
+</submitButton>
     </fieldset>
 </form>
 </div>
