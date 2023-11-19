@@ -170,34 +170,10 @@
 </form>
 
 
-<script>
-    const form = document.querySelector('form');
-
-form.addEventListener('submit', (e) => {
-e.preventDefault();
-
-    let include_letters = [];
-    let exclude_letters = [];
-
-    document.querySelectorAll('[type="checkbox"]').forEach(item =>{
-        if (item.checked === true){
-            include_letters.push(item.value);
-        }else{
-            exclude_letters.push(item.value);
-        }
-    })
-    console.log(include_letters);
-    console.log(exclude_letters);
 
 
-    // Convert the array to a JSON string
-    const jsonString = JSON.stringify(include_letters, null, 2);
+<script src="script.js"></script>
 
-    // Send data to the server using Fetch API
-    
-})
-
-</script>
     
 
 </body>
