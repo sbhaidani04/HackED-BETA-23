@@ -28,3 +28,7 @@ button:hover{ /* turning cursor to pointer when hovered over submit button*/
     text-align: center;
 
   }
+
+.textbox{
+    width: 50px;
+}
