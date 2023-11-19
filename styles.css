@@ -8,10 +8,15 @@ fieldset{
 }
 
 h1{
-    font-style:normal;
+    font-style: oblique;
     color: white;
 }
 
 button:hover{ /* turning cursor to pointer when hovered over submit button*/
     cursor: pointer;
 }
+
+.center {
+    text-align: center;
+
+  }
